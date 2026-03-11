@@ -1,48 +1,59 @@
-        <h2>Clean World, Bright Babies!</h2>
-        <h1>Babyclean HYA – Babysitters</h1>
-        <p>Childcare & Kids Room Organization</p>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Sobre mí -->
-    <div class="card">
-        <h3>About Me</h3>
-        <p>Nurse with experience caring for children from 0-10 years old.</p>
-        <p>Safe and responsible childcare in Beaumont, Texas.</p>
-        <p>Own transportation 🚗</p>
-    </div>
+<title>Babyclean HYA | Babysitter y Organización de Cuartos en Beaumont, TX</title>
 
-    <!-- Servicios -->
-    <div class="card">
-        <h3>Services</h3>
-        <p>👶 Childcare (0-10 years)</p>
-        <p>🧸 Kids room organization</p>
-        <p>👕 Closet organization</p>
-        <p>🧹 Toy organization</p>
-    </div>
+<meta name="description" content="Babyclean HYA ofrece cuidado de niños de 0 a 10 años, organización de cuartos y closets, con transporte propio en Beaumont, Texas.">
+<meta name="keywords" content="babysitter Beaumont TX, cuidado de niños Beaumont, organización de cuartos Beaumont, organización de closets, cuidadora de niños, babysitting">
 
-    <!-- Galería de fotos personalizada -->
-    <div class="card gallery">
-        <h3>Kids Room Organization</h3>
-        <img src="foto1.jpg" alt="Cuarto infantil organizado 1">
-        <img src="foto2.jpg" alt="Cuarto infantil organizado 2">
-        <img src="foto3.jpg" alt="Cuarto infantil organizado 3">
-        <img src="foto4.jpg" alt="Cuarto infantil organizado 4">
-        <img src="foto5.jpg" alt="Cuarto infantil organizado 5">
-        <img src="foto6.jpg" alt="Cuarto infantil organizado 6">
-        <img src="foto7.jpg" alt="Cuarto infantil organizado 7">
-    </div>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background: #eaf6fb;
+    position: relative;
+    min-height: 100vh;
+}
 
-    <!-- Contacto -->
-    <div class="card">
-        <h3>Contact</h3>
-        <p>📞 409-201-1120</p>
-        <p>📞 409-273-6923</p>
-    </div>
+/* Fondo de burbujas */
+body::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url('burbujas.png'); /* tu fondo de burbujas */
+    background-repeat: repeat;
+    opacity: 0.15;
+    z-index:0;
+}
 
-</div>
+.container {
+    position: relative;
+    z-index:1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+}
 
-<!-- WhatsApp flotante -->
-<a class="whatsapp" href="https://wa.me/14092011120" target="_blank">Chat on WhatsApp</a>
+.logo {
+    width: 180px;       
+    max-width: 90%;     
+    margin-bottom: 10px;
+}
 
-</body>
-</html>
+.card {
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
