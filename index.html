@@ -27,7 +27,7 @@ body::before {
     left:0;
     width:100%;
     height:100%;
-    background-image: url('burbujas.png'); /* tu fondo de burbujas */
+    background-image: url('burbujas.png'); 
     background-repeat: repeat;
     opacity: 0.15;
     z-index:0;
@@ -77,11 +77,16 @@ h3 {
     justify-content:center;
 }
 
-.gallery img {
+.gallery a img {
     width:180px; 
     max-width:90%; 
     margin:10px;
     border-radius:12px;
+    transition: transform 0.2s;
+}
+
+.gallery a img:hover {
+    transform: scale(1.05); /* Pequeño efecto al pasar el mouse */
 }
 
 .whatsapp {
@@ -105,9 +110,9 @@ h3 {
 
     <!-- Logo y slogan -->
     <div class="header">
-        <img src="logo.png.jpg" class="logo" alt="Babyclean HYA Logo">
+        <img src="Logo.jpg" class="logo" alt="Babyclean HYA Logo">
         <h2>Clean World, Bright Babies!</h2>
-        <h1>Babyclean HYA – Babysitter</h1>
+        <h1>Babyclean HYA – Babysitter y Organización de Cuartos</h1>
         <p>Childcare & Kids Room Organization</p>
     </div>
 
@@ -128,16 +133,16 @@ h3 {
         <p>🧹 Toy organization</p>
     </div>
 
-    <!-- Galería de fotos personalizada -->
+    <!-- Galería de fotos clicables -->
     <div class="card gallery">
         <h3>Kids Room Organization</h3>
-        <img src="foto1.jpg" alt="Cuarto infantil organizado 1">
-        <img src="foto2.jpg" alt="Cuarto infantil organizado 2">
-        <img src="foto3.jpg" alt="Cuarto infantil organizado 3">
-        <img src="foto4.jpg" alt="Cuarto infantil organizado 4">
-        <img src="foto5.jpg" alt="Cuarto infantil organizado 5">
-        <img src="foto6.jpg" alt="Cuarto infantil organizado 6">
-        <img src="foto7.jpg" alt="Cuarto infantil organizado 7">
+        <a href="foto1.jpg" target="_blank"><img src="foto1.jpg" alt="Cuarto infantil organizado 1"></a>
+        <a href="foto2.jpg" target="_blank"><img src="foto2.jpg" alt="Cuarto infantil organizado 2"></a>
+        <a href="foto3.jpg" target="_blank"><img src="foto3.jpg" alt="Cuarto infantil organizado 3"></a>
+        <a href="foto4.jpg" target="_blank"><img src="foto4.jpg" alt="Cuarto infantil organizado 4"></a>
+        <a href="foto5.jpg" target="_blank"><img src="foto5.jpg" alt="Cuarto infantil organizado 5"></a>
+        <a href="foto6.jpg" target="_blank"><img src="foto6.jpg" alt="Cuarto infantil organizado 6"></a>
+        <a href="foto7.jpg" target="_blank"><img src="foto7.jpg" alt="Cuarto infantil organizado 7"></a>
     </div>
 
     <!-- Contacto -->
