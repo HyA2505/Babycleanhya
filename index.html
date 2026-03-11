@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-/* Fondo de burbujas personalizado */
+/* Fondo de burbujas */
 body::before {
     content: '';
     position: absolute;
@@ -29,18 +29,19 @@ body::before {
     z-index:0;
 }
 
-/* Contenedor principal */
 .container {
     position: relative;
     z-index:1;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    text-align:center;
 }
 
 /* Logo */
-.logo.png{
-    width: 180px;
+.logo {
+    width: 180px;        /* Tamaño del logo */
+    max-width: 90%;      /* Para que se ajuste en celular */
     margin-bottom: 10px;
 }
 
@@ -70,14 +71,15 @@ h3 {
 }
 
 /* Galería de fotos */
-.gallery {foto3.jpg 
+.gallery {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
 }
 
-.gallery img {20260309_105241.jpg
-    width:220px;
+.gallery img {
+    width:180px; /* Ajusta tamaño de fotos */
+    max-width:90%; /* Para celular */
     margin:10px;
     border-radius:12px;
 }
@@ -130,7 +132,7 @@ h3 {
     <!-- Galería de fotos personalizada -->
     <div class="card gallery">
         <h3>Kids Room Organization</h3>
-        <img src="20260309_105241.jpg" alt="Organized Room 1">
+        <img src="foto1.jpg" alt="Organized Room 1">
         <img src="foto2.jpg" alt="Organized Room 2">
         <img src="foto3.jpg" alt="Organized Room 3">
     </div>
@@ -139,7 +141,7 @@ h3 {
     <div class="card">
         <h3>Contact</h3>
         <p>📞 409-201-1120</p>
-        <p>📞 409-273-6923</p>
+        <p>📞 409-444-207</p>
     </div>
 
 </div>
