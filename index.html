@@ -1,124 +1,151 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Babyclean HYA</title>
 
 <style>
-
-body{
-font-family: Arial;
-background:#f0f8ff;
-text-align:center;
-margin:0;
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background: #eaf6fb;
+    position: relative;
+    min-height: 100vh;
 }
 
-.header{
-padding:30px;
+/* Fondo de burbujas personalizado */
+body::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url('burbujas.png'); /* tu fondo de burbujas */
+    background-repeat: repeat;
+    opacity: 0.15;
+    z-index:0;
 }
 
-.logo{
+/* Contenedor principal */
+.container {
+    position: relative;
+    z-index:1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.section{
-background:burbujas;
-margin:20px;
-padding:25px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+/* Logo */
+.logo {
+    width: 220px;
+    margin-bottom: 10px;
 }
 
-.gallery img{
-width:220px;
-margin:10px;
-border-radius:10px;
+/* Tarjetas */
+.card {
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:30px;
-text-decoration:none;
-font-size:18px;
+/* Títulos */
+h1 {
+    color:#2c7a7b;
+    margin: 10px 0;
 }
 
+h2 {
+    color:#4a90a4;
+    margin:5px 0 15px 0;
+}
+
+h3 {
+    color:#2c7a7b;
+    margin-bottom:10px;
+}
+
+/* Galería de fotos */
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.gallery img {
+    width:220px;
+    margin:10px;
+    border-radius:12px;
+}
+
+/* Botón WhatsApp */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:18px;
+    z-index:2;
+}
 </style>
 
 </head>
-
 <body>
 
-<div class="header">
+<div class="container">
 
-<img src="IMG-20260116-WA0023.jpg" class="logo">
+    <!-- Logo y slogan -->
+    <div class="header">
+        <img src="logo.png" class="logo" alt="Babyclean HYA Logo">
+        <h2>Clean World, Bright Babies!</h2>
+        <h1>Babyclean HYA</h1>
+        <p>Childcare & Kids Room Organization</p>
+    </div>
 
-<h2>Clean World, Bright Babies!</h2>
-</div>
-  
-<div class="section">
+    <!-- Sobre mí -->
+    <div class="card">
+        <h3>About Me</h3>
+        <p>Nurse with experience caring for children from 0-10 years old.</p>
+        <p>Safe and responsible childcare in Beaumont, Texas.</p>
+        <p>Own transportation 🚗</p>
+    </div>
 
-<h3>Services</h3>
+    <!-- Servicios -->
+    <div class="card">
+        <h3>Services</h3>
+        <p>👶 Childcare (0-10 years)</p>
+        <p>🧸 Kids room organization</p>
+        <p>👕 Closet organization</p>
+        <p>🧹 Toy organization</p>
+    </div>
 
-<p>👶 Childcare (0-10 years)</p>
-<p>🧸 Kids room organization</p>
-<p>👕 Cloet organization</p>
-<p>🧹 Toy organization</p>
+    <!-- Galería de fotos personalizada -->
+    <div class="card gallery">
+        <h3>Kids Room Organization</h3>
+        <img src="foto1.jpg" alt="Organized Room 1">
+        <img src="foto2.jpg" alt="Organized Room 2">
+        <img src="foto3.jpg" alt="Organized Room 3">
+    </div>
 
-</div>
-
-<div class="section">
-
-<h3>Why choose me?</h3>
-
-<p>✔ Nurse with childcare experience</p>
-<p>✔ Safe and responsible care</p>
-<p>✔ Organized and clean environment</p>
-<p>✔ Own transportation</p>
-
-</div>
-
-<div class="section gallery">
-
-<h3>Kids Room Organization</h3>
-
-<img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
-
-</div>
-
-<div class="section">
-
-<h3>Location</h3>
-
-<iframe
-width="100%"
-height="300"
-style="border:0"
-loading="lazy"
-allowfullscreen
-src="https://maps.google.com/maps?q=Beaumont%20Texas&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
+    <!-- Contacto -->
+    <div class="card">
+        <h3>Contact</h3>
+        <p>📞 409-201-1120</p>
+        <p>📞 409-444-207</p>
+    </div>
 
 </div>
 
-<div class="section">
-
-<h3>Contact</h3>
-
-<p>📞 409-201-1120</p>
-<p>📞 409-444-207</p>
-
-</div>
-
-<a class="whatsapp" href="https://wa.me/14092011120">
-Chat on WhatsApp
-</a>
+<!-- WhatsApp flotante -->
+<a class="whatsapp" href="https://wa.me/14092011120" target="_blank">Chat on WhatsApp</a>
 
 </body>
 </html>
